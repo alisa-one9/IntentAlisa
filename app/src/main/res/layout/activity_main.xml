@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_screen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mail_mail"
+
+        />
+
+    <TextView
+        android:id="@+id/text_screen1"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Привет!"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn1_screen1"
+        android:textColorLink="@color/purple_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:shadowColor="@color/purple_700"
+        android:text="на второй экран"
+        android:onClick="openActivity"
+        />
+
+    <Button
+        android:id="@+id/btn2_screen1"
+        android:textColorLink="@color/purple_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:shadowColor="@color/purple_700"
+        android:text="Перейти в почту: Gmail.com"
+        android:onClick="to_Gmail"/>
+</LinearLayout>
